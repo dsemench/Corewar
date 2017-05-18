@@ -40,7 +40,33 @@ void		check_label_name(char *name)
 		ft_error(ft_strjoin("\ninvalid label : ", name));
 }
 
+void		check_t_reg(char *ins)
+{
+	int 	r;
+
+	r = ft_atoi(&ins[1]);
+	if (r > REG_NUMBER)
+		ft_error("invalid number of register");
+}
+
 void		check_t_dir(char *ins)
+{
+	int 	i;
+
+	i = 1;
+	if (ins[1] == LABEL_CHAR)
+	{
+		while (ins[++i])
+			if (!ft_strchr(LABEL_CHARS, ins[i]))
+				ft_error("invalid label char");
+	}
+	else if (ins[1] == '-' || ft_isdigit(ins[1]))
+	{
+
+	}
+}
+
+void		check_t_ind(char *ins)
 {
 
 }
