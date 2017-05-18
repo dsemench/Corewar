@@ -65,6 +65,7 @@ void				trim_line(char *line, t_asm *file);
 */
 void				check_filename(t_asm *file, char *filename);
 void				check_label_name(char *name);
+void				check_t_dir(char *ins);
 
 /*
 ** error_management.c

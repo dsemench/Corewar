@@ -16,6 +16,16 @@ char 		type_arg(char *arg)
 {
 	if (arg[0] == 'r' && ft_isdigit(arg[1]))
 		return (T_REG);
+	else if (arg[0] == DIRECT_CHAR)
+	{
+		check_t_dir(arg);
+		return (T_DIR);
+	}
+	else if ()
+	{
+		check_t_ind(arg);
+		return (T_IND);
+	}
 	
 
 }

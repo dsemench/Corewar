@@ -39,3 +39,8 @@ void		check_label_name(char *name)
 	if (name[i] != LABEL_CHAR || name[i + 1])
 		ft_error(ft_strjoin("\ninvalid label : ", name));
 }
+
+void		check_t_dir(char *ins)
+{
+
+}
